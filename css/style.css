@@ -27,18 +27,14 @@ body{
 	max-width: 90%;
 }
 
-
-/* [class^="ba-width-"] {
-	outline: 1px solid red;
-} */
-
 .img {
 	width: 100%;
-	height: 100%;
+	/* height: 100%; */
 }
 
 .img--tall {
-	height: 600px;
+	width: 100%;
+	/* height: 600px; */
 }
 
 .section--cover {
@@ -65,15 +61,6 @@ body{
 	position: relative;
 }
 
-.header__span {
-	font-size: 50rem;
-	color: white;
-	position: absolute;
- 	left: -135px;
-	top: 130px;
-	font-weight: 700;
-}
-
 .header__ul {
 	text-align: right;
 	margin: 0;
@@ -86,7 +73,6 @@ body{
 	font-weight: 700;
 	display: inline-block;
 	vertical-align: top;
-	/* outline: 2px solid red; */
 }
 
 .header__part {
@@ -106,38 +92,9 @@ body{
 	color: yellow;
 }
 
-.header__h1 {
-	padding-top: 80px;
-	font-size: 10rem;
-	text-align: left;
-	margin-bottom: 0;
-}
 
 .ba-width-5-6 {
 	padding-top: 70px;
-}
-
-
-.main__ul{
-	text-align: right;
-	margin: 0;
-	margin-top: 30px	;
-	margin-bottom: 50px;
-	font-size: 14px;
-}
-
-.main__ul--left{
-	text-align: left;
-	padding: 0;
-}
-
-.main__li {
-	display: inline-block;
-}
-
-.main__li--left {
-	padding: 0;
-	padding-left: 5px;
 }
 
 .main__link {
@@ -145,16 +102,44 @@ body{
 	font-weight: 700;
 	text-transform: uppercase;
 	text-decoration: none;
+	text-align: right;
+	margin: 0;
+	display: inline-block;
+	margin-top: 10px;
+	margin-bottom: 50px;
+	font-size: 14px;
+	width: 100%;
 }
 
-.main__line {
-	/* display: inline-block; */
+.main__link--left {
+	text-align: left;
+	padding: 0;
+}
+
+.main__link:hover,
+.main__link:active,
+.main__link:focus {
+	filter: hue-rotate(180deg);
+}
+
+.main__link::after {
+	display: inline-block;
 	height: 6px;
 	width: 100px;
-	/* background: #1873ee; */
-	margin: 0;
+	content: "";
+	margin-left: 10px;
 	border-top: 2px solid #1873ee;
 }
+
+.main__h1 {
+	font-size: 10rem;
+	text-align: left;
+	line-height: 1;
+	margin: 0;
+	margin-bottom: 50px;
+	margin-left: 205px;
+}
+
 
 .main__h2 {
 	font-size: 6.5rem;
@@ -178,6 +163,16 @@ body{
 
 .main__p--tall {
 	margin-top: 110px;
+}
+
+
+.main__span {
+	font-size: 50rem;
+	color: white;
+	position: absolute;
+ 	left: -135px;
+	top: 130px;
+	font-weight: 700;
 }
 
 .btn {
